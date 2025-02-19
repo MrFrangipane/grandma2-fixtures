@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.9.60/MA.xsd" major_vers="3" minor_vers="9" stream_vers="60">
+	<Info datetime="2025-02-19T10:36:39" showfile="vpu_demo_triplehead2go" />
+	<FixtureType index="1" name="Tristan200">
+		<short_name>T200</short_name>
+		<manufacturer>Ignition</manufacturer>
+		<short_manufacturer>Ignition</short_manufacturer>
+		<Modules index="0">
+			<Module index="0" class="None" beamtype="Wash" beam_angle="35" beam_intensity="10000">
+				<ChannelType index="0" attribute="PAN" feature="POSITION" preset="POSITION" coarse="1" fine="2">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="-180" physto="180" subattribute="PAN" subattribute_user_name="Pan" attribute="PAN" attribute_user_name="Pan" feature="POSITION" feature_user_name="Position" preset="POSITION" preset_user_name="Position" />
+				</ChannelType>
+				<ChannelType index="1" attribute="TILT" feature="POSITION" preset="POSITION" coarse="3" fine="4">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="-90" physto="90" subattribute="TILT" subattribute_user_name="Tilt" attribute="TILT" attribute_user_name="Tilt" feature="POSITION" feature_user_name="Position" preset="POSITION" preset_user_name="Position" />
+				</ChannelType>
+				<ChannelType index="2" attribute="COLOR1" feature="COLOR1" preset="COLOR" coarse="6" highlight_value="0">
+					<ChannelFunction index="0" name="Color" from="0" to="50" min_dmx_24="0" max_dmx_24="8388607" wheel="1" subattribute="COLOR1" subattribute_user_name="Select" attribute="COLOR1" attribute_user_name="C1" feature="COLOR1" feature_user_name="Color1" preset="COLOR" preset_user_name="Color">
+						<ChannelSet index="0" name="open" from_dmx="0" to_dmx="7" slot_index="0" />
+						<ChannelSet index="1" name="red" from_dmx="8" to_dmx="14" slot_index="1" />
+						<ChannelSet index="2" name="orange" from_dmx="15" to_dmx="21" slot_index="2" />
+						<ChannelSet index="3" name="yellow" from_dmx="22" to_dmx="28" slot_index="3" />
+						<ChannelSet index="4" name="green" from_dmx="29" to_dmx="35" slot_index="4" />
+						<ChannelSet index="5" name="cyan" from_dmx="36" to_dmx="42" slot_index="5" />
+						<ChannelSet index="6" name="magenta" from_dmx="43" to_dmx="49" slot_index="6" />
+						<ChannelSet index="7" name="blue" from_dmx="50" to_dmx="56" slot_index="7" />
+						<ChannelSet index="8" name="bright pink" from_dmx="57" to_dmx="63" slot_index="8" />
+						<ChannelSet index="9" name="open" from_dmx="64" to_dmx="64" slot_index="0" />
+					</ChannelFunction>
+					<ChannelFunction index="1" from="50" to="100" min_dmx_24="8388608" max_dmx_24="16777215" wheel="2" subattribute="COLOR1_SPIN" subattribute_user_name="Spin" attribute="COLOR1" attribute_user_name="C1" feature="COLOR1" feature_user_name="Color1" preset="COLOR" preset_user_name="Color">
+						<ChannelSet index="0" name="Descending" from_dmx="128" to_dmx="191" slot_from="0" slot_to="0" auto_create="false" />
+						<ChannelSet index="1" name="Stop" from_dmx="190" to_dmx="193" slot_from="0" slot_to="0" />
+						<ChannelSet index="2" name="Ascending" from_dmx="194" to_dmx="255" slot_from="0" slot_to="0" auto_create="false" />
+					</ChannelFunction>
+				</ChannelType>
+			</Module>
+		</Modules>
+		<Instances index="1">
+			<Instance index="0" module_index="0" />
+		</Instances>
+		<Wheels index="2">
+			<Wheel index="0" subattribute="COLOR1" attribute="COLOR1" feature="COLOR1" preset="COLOR">
+				<Slot index="0" media_name="open" />
+				<Slot index="1" media_name="red" g="0" b="0" />
+				<Slot index="2" media_name="orange" g="137" b="0" />
+				<Slot index="3" media_name="yellow" g="252" b="0" />
+				<Slot index="4" media_name="green" r="1" b="0" />
+				<Slot index="5" media_name="cyan" r="0" g="251" />
+				<Slot index="6" media_name="magenta" r="163" g="0" />
+				<Slot index="7" media_name="blue" r="0" g="5" />
+				<Slot index="8" media_name="bright pink" r="254" g="118" />
+			</Wheel>
+			<Wheel index="1" subattribute="COLOR1_SPIN" attribute="COLOR1" feature="COLOR1" preset="COLOR" />
+		</Wheels>
+		<VirtualFunctionBlocks index="3" />
+		<FixtureMacroCollect index="5" />
+		<Body />
+		<AutoPresets index="4" />
+		<RdmNotifications index="6">
+			<RdmNotification index="0" Type="Absent" Subcategory="RDM Warning" />
+		</RdmNotifications>
+	</FixtureType>
+</MA>
